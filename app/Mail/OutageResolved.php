@@ -12,9 +12,9 @@ class OutageResolved extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $site;
+    protected $site;
 
-    public $currentOutage;
+    protected $currentOutage;
 
     /**
      * Create a new message instance.

@@ -13,15 +13,19 @@ use Illuminate\Support\Facades\Mail;
 
 class SiteCheck implements ShouldQueue
 {
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+    use Dispatchable;
+    use InteractsWithQueue;
+    use Queueable;
+    use SerializesModels;
+
+    protected $site;
 
     /**
      * Create a new job instance.
      */
-    public function __construct(
-        public \App\Models\Site $site,
-    ) {
-        //
+    public function __construct($site)
+    {
+        $this->site = $site;
     }
 
     /**
