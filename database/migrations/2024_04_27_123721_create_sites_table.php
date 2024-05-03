@@ -16,6 +16,9 @@ return new class extends Migration
             $table->string('name');
             $table->string('description')->nullable();
             $table->string('url')->nullable();
+            $table->string('email')->nullable();
+            $table->string('email_outage')->nullable();
+            $table->string('email_resolved')->nullable();
             $table->datetime('checked_at')->nullable();
             $table->timestamps();
         });

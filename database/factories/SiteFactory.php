@@ -12,6 +12,9 @@ class SiteFactory extends Factory
             'name' => $this->faker->word,
             'url' => $this->faker->url,
             'description' => $this->faker->sentence,
+            'email' => $this->faker->email,
+            'email_outage' => $this->faker->email,
+            'email_resolved' => $this->faker->email,
         ];
     }
 }

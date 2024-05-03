@@ -24,12 +24,24 @@ class SiteResource extends Resource
                     ->required()
                     ->rules('string|min:3')
                     ->columnSpanFull(),
+                Forms\Components\TextInput::make('description')
+                    ->rules('string|max:255')
+                    ->columnSpanFull(),
                 Forms\Components\TextInput::make('url')
                     ->required()
                     ->rules('url')
                     ->columnSpanFull(),
-                Forms\Components\TextInput::make('description')
-                    ->rules('string|max:255')
+                Forms\Components\TextInput::make('email')
+                    ->label('Site email to notify of outages')
+                    ->rules('email')
+                    ->columnSpanFull(),
+                Forms\Components\TextInput::make('email_outage')
+                    ->label('Automated email to notify of outages')
+                    ->rules('email')
+                    ->columnSpanFull(),
+                Forms\Components\TextInput::make('email_resolved')
+                    ->label('Automated email to notify of end of outages')
+                    ->rules('email')
                     ->columnSpanFull(),
             ]);
     }

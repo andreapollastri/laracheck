@@ -49,6 +49,16 @@ class SiteCheck implements ShouldQueue
                     'occurred_at' => now(),
                 ]);
 
+                if ($this->site->email) {
+                    Mail::to($this->site->email)
+                        ->send(new OutageOccurred($this->site));
+                }
+
+                if ($this->site->email_outage) {
+                    Mail::to($this->site->email_outage)
+                        ->send(new OutageOccurred($this->site));
+                }
+
                 Mail::to(\App\Models\User::first()->email)
                     ->send(new OutageOccurred($this->site));
             }
@@ -57,6 +67,16 @@ class SiteCheck implements ShouldQueue
                 $currentOutage->update([
                     'resolved_at' => now(),
                 ]);
+
+                if ($this->site->email) {
+                    Mail::to($this->site->email)
+                        ->send(new OutageResolved($this->site, $currentOutage));
+                }
+
+                if ($this->site->email_resolved) {
+                    Mail::to($this->site->email_resolved)
+                        ->send(new OutageResolved($this->site, $currentOutage));
+                }
 
                 Mail::to(\App\Models\User::first()->email)
                     ->send(new OutageResolved($this->site, $currentOutage));

@@ -13,7 +13,8 @@ return new class() extends Migration
     {
         Schema::create('outages', function (Blueprint $table) {
             $table->uuid('id');
-            $table->foreignUuid('site_id')->costrainted();
+            $table->string('site_id');
+            $table->foreign('site_id')->references('id')->on('sites')->onDelete('cascade');
             $table->datetime('occurred_at');
             $table->datetime('resolved_at')->nullable();
             $table->timestamps();

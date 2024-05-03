@@ -14,6 +14,11 @@ class Site extends Model
         'checked_at' => 'datetime',
     ];
 
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
+
     public function outages()
     {
         return $this->hasMany(Outage::class);

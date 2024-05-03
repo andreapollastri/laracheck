@@ -14,6 +14,11 @@ class Bug extends Model
         'logged_at' => 'datetime',
     ];
 
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+    ];
+
     public function site()
     {
         return $this->belongsTo(Site::class);
