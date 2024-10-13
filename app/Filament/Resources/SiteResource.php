@@ -32,15 +32,15 @@ class SiteResource extends Resource
                     ->rules('url')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('email')
-                    ->label('Site email to notify of outages')
+                    ->label('Site outages email')
                     ->rules('email')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('email_outage')
-                    ->label('Automated email to notify of outages')
+                    ->label('Automated site outage email')
                     ->rules('email')
                     ->columnSpanFull(),
                 Forms\Components\TextInput::make('email_resolved')
-                    ->label('Automated email to notify of end of outages')
+                    ->label('Automated site outage resolution email')
                     ->rules('email')
                     ->columnSpanFull(),
             ]);
