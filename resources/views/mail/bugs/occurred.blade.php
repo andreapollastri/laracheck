@@ -6,7 +6,7 @@
 | <span style="font-size: 16px; color: #000;">Bug #{{ $bug->id }} @ <br>{{ $bug->site->name }}</span> |
 | :------------ |
 | <b>Logged At  </b><br>{{ $bug->logged_at }} |
-| <b>URL        </b><br>{{ $bug->site->url }} |
+| <b>URL        </b><br>{{ $bug->url }} |
 | <b>Path       </b><br>{{ $bug->method }} @ {{ $bug->path }} |
 | <b>File       </b><br>{{ $bug->file }}:{{ $bug->line }} |
 | <b>Message    </b><br><i>{{ $bug->message }}</i> |
