@@ -21,5 +21,13 @@ class AppServiceProvider extends ServiceProvider
     {
         \App\Helpers\Password::defaults();
         \Illuminate\Database\Eloquent\Model::unguard();
+
+        \Illuminate\Validation\Rules\Password::defaults(function () {
+            return \Illuminate\Validation\Rules\Password::min(8)
+                ->mixedCase()
+                ->numbers()
+                ->symbols()
+                ->uncompromised();
+        });
     }
 }
