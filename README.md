@@ -4,11 +4,11 @@
 <img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/dashboard.png" style="width:100%;">
 </center>
 
-## Introduction
+#### Introduction
 
 Track Application errors and outages before your Users discover them! Laracheck is a simple-to-use Laravel error tracker and application uptime monitoring service.
 
-## Screenshots
+#### Screenshots
 
 <center>
 <img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/errors.png" style="width:100%;"><br>
@@ -16,7 +16,7 @@ Track Application errors and outages before your Users discover them! Laracheck 
 <img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/outages.png" style="width:100%;">
 </center>
 
-## Installation
+#### Installation
 
 -   Clone this repo and install it on your server
 -   Configure your `.env` file with your own configuration
@@ -26,7 +26,7 @@ Track Application errors and outages before your Users discover them! Laracheck 
 -   Sign In using `admin@admin.com` / `password` credentials
 -   Edit email, password and 2FA into User Profile page
 
-## Add Sites
+#### Add Sites
 
 -   Create a new Site into Sites area
 -   Create an API token via User Profile page
@@ -35,15 +35,15 @@ Track Application errors and outages before your Users discover them! Laracheck 
 
 > In site configuration you can set as option an email to notify both outages and resolutions, an email to notify only outages and another one to notify only resoltions. This is useful if you have to configure third parts status pages.
 
-## Licence
+#### License
 
 Laracheck is an open-source software licensed under the MIT license.
 
-## Contributing
+#### Contributing
 
 Thank you for considering contributing to this project (Pull Requests, Issues, Feedbacks, Stars, Promo, Beers) :)
 
-## Support
+#### Support
 
 Need support with Laracheck? Please open an issue here: https://github.com/andreapollastri/laracheck/issues.
 
