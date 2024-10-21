@@ -33,14 +33,20 @@ Track Application errors and outages before your Users discover them! Laracheck 
 -   Install the Laracheck client into your site: https://github.com/andreapollastri/laracheck-client (`composer require andreapollastri/laracheck`)
 -   Configure your site .env file with API Token, Site ID and your Laracheck `/api/bugs` path (e.g. https://laracheck.site.com/api/bugs)
 
-## Contributing
-
-Thank you for considering contributing to this project (Pull Requests, Issues, Feedbacks, Stars, Promo, Beers) :)
+> In site configuration you can set as option an email to notify both outages and resolutions, an email to notify only outages and another one to notify only resoltions. This is useful if you have to configure third parts status pages.
 
 ## Licence
 
 Laracheck is an open-source software licensed under the MIT license.
 
+## Contributing
+
+Thank you for considering contributing to this project (Pull Requests, Issues, Feedbacks, Stars, Promo, Beers) :)
+
+## Support
+
 Need support with Laracheck? Please open an issue here: https://github.com/andreapollastri/laracheck/issues.
+
+<hr>
 
 ...enjoy Laracheck :)
