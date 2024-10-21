@@ -18,4 +18,29 @@ Track Application errors and outages before your Users discover them! Laracheck 
 
 ## Installation
 
-Wip...
+-   Clone this repo and install it on your server
+-   Configure your `.env` file with your own configuration
+-   Configure SMTP email credentals (systems will send notification)
+-   Run migrations and seeders `php artisan migrate --seed`
+-   Set Cron Jobs `* * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1`
+-   Sign In using `admin@admin.com` / `password` credentials
+-   Edit email, password and 2FA into User Profile page
+
+## Add Sites
+
+-   Create a new Site into Sites area
+-   Create an API token via User Profile page
+-   Install the Laracheck client into your site: https://github.com/andreapollastri/laracheck-client (`composer require andreapollastri/laracheck`)
+-   Configure your site .env file with API Token, Site ID and your Laracheck `/api/bugs` path (e.g. https://laracheck.site.com/api/bugs)
+
+## Contributing
+
+Thank you for considering contributing to this project (Pull Requests, Issues, Feedbacks, Stars, Promo, Beers) :)
+
+## Licence
+
+Laracheck is an open-source software licensed under the MIT license.
+
+Need support with Laracheck? Please open an issue here: https://github.com/andreapollastri/laracheck/issues.
+
+...enjoy Laracheck :)

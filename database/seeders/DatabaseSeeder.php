@@ -16,9 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory()->create([
+        User::create([
             'name' => 'Admin User',
             'email' => 'admin@admin.com',
+            'password' => bcrypt('password'),
         ]);
 
         if (config('app.env') === 'local') {
