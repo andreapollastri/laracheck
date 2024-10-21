@@ -11,8 +11,8 @@ Track Application errors and outages before your Users discover them! Laracheck 
 ## Screenshots
 
 <center>
-<img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/errors.png" style="width:100%;"><br><br>
-<img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/error_details.png" style="width:100%;"><br><br>
+<img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/errors.png" style="width:100%;"><br>
+<img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/error_details.png" style="width:100%;"><br>
 <img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/outages.png" style="width:100%;">
 </center>
 
