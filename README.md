@@ -1,7 +1,7 @@
 # Laracheck
 
 <center>
-<img src="">
+<img src="https://raw.githubusercontent.com/andreapollastri/laracheck/refs/heads/main/_art/dashboard.png" style="width:100%;">
 </center>
 
 ## Introduction
